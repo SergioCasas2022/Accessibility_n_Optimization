@@ -8,48 +8,52 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Definition of the very top header within the body */
+
+/* Definition of the top header container style  */
 .header {
+    /* Flex wrap allow the links to stay whithin the header without overlaping the main image below when screen size gets below 1105px */
+    display: flex;
+    flex-wrap: wrap;    
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
+/* Format Horiseon logo */
 .header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* Provide format to the targeted - spam secciotn in the logo */
 .header h1 .seo {
     color: #d9dcd6;
 }
 
+/* Defines the container of the main links in the header */
 .header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-.header div ul {
-    list-style-type: none;
-}
-
+/* Defines the way of displaying the links */
 .header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* Provide format to the links */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
-p {
-    font-size: 16px;
-}
-
+/* Defines the format of the main image in the body of the page */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,6 +63,36 @@ p {
     background-position: center;
 }
 
+/* Defines the container of the actual content of the page */
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* Define service blocks format */
+.service-block {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+ }
+
+/* Define image format inside of service block */
+.service-block img {
+    max-height: 200px;
+}
+
+/* Defines margin and font size of the header inside of the service blocks  */
+.service-block h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Defines the position of the image of the services left or right*/
 .float-left {
     float: left;
     margin-right: 25px;
@@ -69,12 +103,12 @@ p {
     margin-left: 25px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* Defines font size to the text in the content */
+p {
+    font-size: 16px;
 }
 
+/* Defines benefits container format */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,112 +116,31 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* Defines benefits block margin and color  */
+.benefit-block {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+/* Defines benefits header format */
+.benefit-block h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+/* Defines benefits image format */
+.benefit-block img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/* Defines the footer of the page  */
 .footer {
     padding: 30px;
     clear: both;
